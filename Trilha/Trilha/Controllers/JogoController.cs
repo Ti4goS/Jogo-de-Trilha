@@ -84,7 +84,7 @@ public class JogoController
     /// <summary>
     /// Verifica se os 2 jogadores possuem até 9 peças
     /// </summary>
-    /// <returns>Se O jogador em questão pode realizar o posicionamento de peças</returns>
+    /// <returns>Se o jogador em questão pode realizar o posicionamento de peças</returns>
     private bool VerificaPecasPosicionamento(CorJogador cor) => cor.Equals(CorJogador.Vermelho)
     ? JogadorVermelho.QuantidadePecas >= 9
     : JogadorAzul.QuantidadePecas >= 9;
