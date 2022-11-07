@@ -23,6 +23,7 @@ namespace Trilha
         public MainWindow()
         {
             InitializeComponent();
+            
         }
     }
 }
