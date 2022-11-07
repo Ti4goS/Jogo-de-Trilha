@@ -69,7 +69,7 @@
         <Button Style="{DynamicResource RoundedButtonStyle}" Content="Instruções" FontSize="20" HorizontalAlignment="Left" Margin="512,233,0,0" VerticalAlignment="Top" Height="45" Width="130" Background="#FF1351B4" Foreground="White"/>
         <Button Style="{DynamicResource RoundedButtonStyle}" Content="Sair do Jogo" FontSize="20" HorizontalAlignment="Left" Margin="512,299,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.057,1.73" Height="45" Width="130" Background="#FF1351B4" Foreground="White"/>
         <TextBlock FontSize="25" HorizontalAlignment="Left" Margin="436,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302" Height="53"><Run Language="pt-br" Text="Jogo de Trilha Backtracking"/><LineBreak/><Run Language="pt-br"/></TextBlock>
-        <Image HorizontalAlignment="Left" Height="457" Margin="0,21,0,0" VerticalAlignment="Top" Width="416" Source="/View/tabuleiro.jpg"/>
+        <Image HorizontalAlignment="Left" Height="457" Margin="0,21,0,0" VerticalAlignment="Top" Width="416" Source="../Resources/Images/tabuleiro.jpg"/>
         <TextBlock FontSize="16" HorizontalAlignment="Left" Margin="460,392,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="254" FontWeight="Bold"><Run Text="Copyright"/><Run Language="pt-br" Text=" © - Copia não comédia"/></TextBlock>
     </Grid>
 </Window>

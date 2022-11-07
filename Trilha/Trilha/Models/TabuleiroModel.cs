@@ -51,6 +51,7 @@ public class TabuleiroModel
         if (Tabuleiro[origem].Equals(cor) && Tabuleiro[destino].Equals(CorJogador.Empty))
         {
             Tabuleiro[destino] = cor;
+            Tabuleiro[origem] = CorJogador.Empty;
             return cor.Equals(CorJogador.Azul) ? CorJogador.Vermelho : CorJogador.Azul;
         }
 
