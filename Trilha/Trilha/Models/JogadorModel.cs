@@ -17,15 +17,15 @@ namespace Trilha.Model;
 /// </list>
 /// </Summary>
 /// 
-public class Jogador
+public class JogadorModel
 {
     private int Id { get; set; }
-    private String Nome { get; set; }
-    private int NumeroVitorias { get; set; }
-    private int QuantidadePecas { get; set; }
-    private CorJogador Cor { get; set; }
+    public String Nome { get; set; }
+    public int NumeroVitorias { get; set; }
+    public int QuantidadePecas { get; set; }
+    public CorJogador Cor { get; set; }
 
-    public Jogador(int id, string nome, int numeroVitorias, int quantidadePecas, CorJogador cor)
+    public JogadorModel(int id, string nome, int numeroVitorias, int quantidadePecas, CorJogador cor)
     {
         Id = id;
         Nome = nome;
