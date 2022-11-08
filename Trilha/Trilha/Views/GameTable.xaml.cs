@@ -36,7 +36,7 @@ namespace Trilha.Views
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Peca1.Background = Brushes.Red;
+            //Peca1.Background = Brushes.Red;
         }
     }
 }
