@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Trilha.Views;
 
 namespace Trilha;
 
@@ -36,6 +37,19 @@ public partial class MainWindow : Window
             this.DragMove();
     }
 
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void NovoJogo_Click(object sender, RoutedEventArgs e)
+    {
+        var tabuleiroWindow = new GameTable();
+        tabuleiroWindow.ShowDialog();
+    }
+
+
     /// <summary>
     /// Método de ação responsável para que o usuário só consiga fechar a janela do jogo através desse botão
     /// </summary>
@@ -43,5 +57,7 @@ public partial class MainWindow : Window
     {
         Close();
     }
+
+
 }
 
