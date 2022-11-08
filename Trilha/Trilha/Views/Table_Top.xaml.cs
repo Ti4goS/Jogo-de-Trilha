@@ -13,22 +13,17 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Trilha
+namespace Trilha.View
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interação lógica para Table_Top.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Table_Top : Page
     {
-        public MainWindow()
+        public Table_Top()
         {
             InitializeComponent();
-            
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

@@ -13,22 +13,35 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Trilha
+namespace Trilha;
+
+/// <summary>
+/// Interaction logic for MainWindow.xaml
+/// </summary>
+public partial class MainWindow : Window
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+    public MainWindow()
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-            
-        }
+        InitializeComponent();
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
+    }
 
-        }
+
+    /// <summary>
+    /// Método responsável por deixar com que o usuário movimente a janela livremente com o botão esquerdo do mouse
+    /// </summary>
+    private void MoveWindow(object sender, MouseButtonEventArgs e)
+    {
+        if (e.ChangedButton == MouseButton.Left)
+            this.DragMove();
+    }
+
+    /// <summary>
+    /// Método de ação responsável para que o usuário só consiga fechar a janela do jogo através desse botão
+    /// </summary>
+    private void SairBtn_Click(object sender, RoutedEventArgs e)
+    {
+        Close();
     }
 }
+
