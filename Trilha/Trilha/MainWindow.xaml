@@ -42,7 +42,8 @@
                 Grid.Row="1"
                 Grid.Column="1"
                 Content="Novo jogo"
-                Background="Blue"/>
+                Background="Blue" 
+                Click="NovoJogo_Click"/>
 
         <Button Style="{DynamicResource MainWindowButtons}"
                 Grid.Row="2"
