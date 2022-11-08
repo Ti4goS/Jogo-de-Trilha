@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace Trilha.View
 {
     /// <summary>
-    /// Interação lógica para Table_Top.xam
+    /// Interação lógica para Table_Top.xaml
     /// </summary>
     public partial class Table_Top : Page
     {
@@ -25,9 +25,5 @@ namespace Trilha.View
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

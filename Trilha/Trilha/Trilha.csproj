@@ -8,16 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Images\Linha_preta.jpg" />
     <None Remove="Resources\tabuleiro.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\Images\Linha_preta.jpg" />
     <Resource Include="Resources\Images\tabuleiro.jpg" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\" />
-
-  </ItemGroup>
 
 </Project>
