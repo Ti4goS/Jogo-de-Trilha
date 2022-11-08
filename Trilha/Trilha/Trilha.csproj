@@ -8,15 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="View\tabuleiro.jpg" />
+    <None Remove="Resources\tabuleiro.jpg" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Assets\" />
+    <Resource Include="Resources\Images\tabuleiro.jpg" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="View\tabuleiro.jpg" />
+    <Folder Include="Views\" />
+
   </ItemGroup>
 
 </Project>

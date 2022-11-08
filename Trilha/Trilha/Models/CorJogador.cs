@@ -12,6 +12,7 @@ namespace Trilha.Model;
 public enum CorJogador
 {
     Azul,
-    Vermelho
+    Vermelho,
+    Empty
 }
 
