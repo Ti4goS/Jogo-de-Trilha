@@ -46,9 +46,9 @@ public class JogoController
 
         if (AindaPosiciona(cor))
         {
-            proximo = Tabuleiro.PosicionaPeca(cor, posicao);
+            proximo = Tabuleiro.PosicionaPeca(cor, posicao-1);
 
-            if (NotEquals(cor, proximo))
+            if (TabuleiroModel.NotEquals(cor, proximo))
                 IncrementaPecas(cor);
         }
             
@@ -66,7 +66,7 @@ public class JogoController
     public CorJogador Jogar(CorJogador cor, int origem, int destino)
     {
 
-        return Tabuleiro.MovimentaPeca(cor, origem, destino);
+        return Tabuleiro.MovimentaPeca(cor, origem - 1, destino - 1);
     }
 
 
@@ -99,13 +99,8 @@ public class JogoController
         : JogadorAzul.QuantidadePecas >= 9;
 
 
-    /// <summary>
-    /// Verifica se as duas cores são diferentes
-    /// </summary>
-    /// <param name="atual">A cor do player que acabou de jogar</param>
-    /// <param name="proximo">A cor do próximo player que irá jogar</param>
-    /// <returns>Se os parametros são diferentes</returns>
-    private bool NotEquals(CorJogador atual, CorJogador proximo) => !atual.Equals(proximo);
+
+    
 
 }
 

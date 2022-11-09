@@ -57,5 +57,13 @@ public class TabuleiroModel
 
         return cor;
     }
+
+    /// <summary>
+    /// Verifica se as duas cores são diferentes
+    /// </summary>
+    /// <param name="atual">A cor do player que acabou de jogar</param>
+    /// <param name="proximo">A cor do próximo player que irá jogar</param>
+    /// <returns>Se os parametros são diferentes</returns>
+    public static bool NotEquals(CorJogador atual, CorJogador proximo) => !atual.Equals(proximo);
 }
 
