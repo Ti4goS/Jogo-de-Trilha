@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Trilha.Controllers;
+using Trilha.Model;
 
 namespace Trilha.Views
 {
@@ -19,8 +21,17 @@ namespace Trilha.Views
     /// </summary>
     public partial class GameTable : Window
     {
-        public GameTable()
+        private readonly JogoController jogoController;
+        private CorJogador JogadorAtual;
+        private CorJogador Proximojogador;
+
+        public GameTable(int idVermehlo, String nomeVermelho, int vitoriasVermelho, int idAzul, String nomeAzul, int vitoriasAzul)
         {
+            jogoController = new JogoController(idVermehlo, nomeVermelho, vitoriasVermelho, idAzul, nomeAzul, vitoriasAzul);
+
+            JogadorAtual = CorJogador.Vermelho;
+            Proximojogador = CorJogador.Empty;
+
             InitializeComponent();
         }
 
@@ -34,8 +45,9 @@ namespace Trilha.Views
                 this.DragMove();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void SelectPecas1_Click(object sender, RoutedEventArgs e)
         {
+            
             //Peca1.Background = Brushes.Red;
         }
     }

@@ -17,7 +17,7 @@
                 HorizontalAlignment="Left" 
                 Margin="15,10,0,0" 
                 VerticalAlignment="Top" 
-                Click="Button_Click" 
+                Click="SelectPecas1_Click" 
                 Width="30" Height="30" 
                 BorderBrush="Black" 
                 Background="Black"/>

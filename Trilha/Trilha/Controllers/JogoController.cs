@@ -41,14 +41,16 @@ public class JogoController
     /// <returns>Retorna a Cor do jogador que realizará a próxima jogada</returns>
     public CorJogador Jogar(CorJogador cor, int posicao)
     {
-        if (VerificaPecasPosicionamento(cor))
-            return cor.Equals(CorJogador.Azul) ? CorJogador.Vermelho : CorJogador.Azul;
-        
-        var proximo = Tabuleiro.PosicionaPeca(cor, posicao);
+        var proximo = cor.Equals(CorJogador.Azul) ? CorJogador.Vermelho : CorJogador.Azul;
 
-        if (NotEquals(cor, proximo))
-            IncrementaPecas(cor);
+        if (AindaPosiciona(cor))
+        {
+            proximo = Tabuleiro.PosicionaPeca(cor, posicao);
 
+            if (NotEquals(cor, proximo))
+                IncrementaPecas(cor);
+        }
+            
         return proximo;
     }
 
@@ -65,6 +67,11 @@ public class JogoController
 
         return Tabuleiro.MovimentaPeca(cor, origem, destino);
     }
+
+
+    public bool AindaPosiciona(CorJogador cor) =>
+        cor.Equals(CorJogador.Azul) ? JogadorAzul.QuantidadePecas <= 8 : JogadorVermelho.QuantidadePecas <= 8;
+    
 
 
     /// <summary>
@@ -86,8 +93,8 @@ public class JogoController
     /// </summary>
     /// <returns>Se o jogador em questão pode realizar o posicionamento de peças</returns>
     private bool VerificaPecasPosicionamento(CorJogador cor) => cor.Equals(CorJogador.Vermelho)
-    ? JogadorVermelho.QuantidadePecas >= 9
-    : JogadorAzul.QuantidadePecas >= 9;
+        ? JogadorVermelho.QuantidadePecas >= 9
+        : JogadorAzul.QuantidadePecas >= 9;
 
 
     /// <summary>
@@ -96,12 +103,7 @@ public class JogoController
     /// <param name="atual">A cor do player que acabou de jogar</param>
     /// <param name="proximo">A cor do próximo player que irá jogar</param>
     /// <returns>Se os parametros são diferentes</returns>
-    private bool NotEquals(CorJogador atual, CorJogador proximo)
-    {
-        if (atual.Equals(proximo))
-            return false;
-        else
-            return true;
-    }
+    private bool NotEquals(CorJogador atual, CorJogador proximo) => !atual.Equals(proximo);
+
 }
 
