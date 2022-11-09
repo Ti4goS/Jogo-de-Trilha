@@ -1,0 +1,60 @@
+﻿<Window x:Class="Trilha.Model.View.Manual"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Trilha.Model.View"
+        mc:Ignorable="d"
+        Title="Manual" Height="1024" Width="576" MinHeight="1024" MinWidth="576" MaxHeight="1024" MaxWidth="576" WindowState="Maximized" WindowStartupLocation="CenterScreen">
+
+    <StackPanel>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Height="29" FontSize="22" FontWeight="Heavy">Manual do Jogo</TextBlock>
+        <TextBlock/>
+        <TextBlock/>
+        <TextBlock Text="O jogo de Trilha tem dois participantes, que usam um tabuleiro para jogar."
+   HorizontalAlignment="Center" FontWeight="Black" FontSize="15"></TextBlock>
+        <TextBlock/>
+        <TextBlock/>
+        <TextBlock Text="Jogadores - 2" FontStyle="Italic" FontWeight="Black" Margin="10 0 0 0" FontSize="14"/>
+        <TextBlock Text="Peças - 18, sendo 9 brancas e 9 pretas." FontStyle="Italic" FontWeight="Black" Margin="10 0 0 0" FontSize="14"/>
+        <TextBlock Text="Tabuleiro - tabuleiro com 24 casas interligadas horizontalmente e verticalmente." FontStyle="Italic" FontWeight="Black" Margin="10 0 0 0" FontSize="14"/>
+        <TextBlock Text="Objetivo - Deixar o adversário com 2 peças no tabuleiro ou deixa-lo sem movimentos." FontStyle="Italic" FontWeight="Black" Margin="10 0 0 0" FontSize="13"/>
+        <TextBlock/>
+        <TextBlock/>
+        <TextBlock Text="O jogo consiste em três partes principais:"  FontWeight="Black" HorizontalAlignment="Center" FontSize="16"/>
+        <TextBlock/>
+        <TextBlock/>
+        <TextBlock Text="Colocando as peças:"  FontWeight="Black" FontSize="16"/>
+        <TextBlock/>
+        <TextBlock Text="Colocando as peças: Esta é a fase inicial do jogo onde cada jogador coloca um peca de cada vez alternando"  FontStyle="Italic" FontWeight="Regular" Margin="10 0 0 0"/>
+        <TextBlock Text="entre jogadores. Caso um dos jogadores forme uma linha horizontal ou vertical com três pecas (um moinho),"  FontStyle="Italic" FontWeight="Regular" Margin="10 0 0 0"/>
+        <TextBlock Text="ele terá o direito de remover uma peça de seu adversário do tabuleiro."  FontStyle="Italic" FontWeight="Regular" Margin="10 0 0 0"/>
+        <TextBlock/>
+        <TextBlock Text="Movendo as peças:"  FontWeight="Black" FontSize="16" />
+        <TextBlock/>
+        <TextBlock Text="Movendo as peças: Esta fase se inicia quando ambos os jogadores colocarem suas nove peças em jogo."  FontStyle="Italic" FontWeight="Regular" Margin="10 0 0 0"/>
+        <TextBlock Text="Consiste em mover suas pecas ao longo de uma das linhas do tabuleiro para uma outra casa adjacente. Caso"  FontStyle="Italic" FontWeight="Regular" Margin="10 0 0 0"/>
+        <TextBlock Text="um dos jogadores tenha somente 3 pecas em jogo, ele pode voar com suas pecas, podendo mover para qual-"  FontStyle="Italic" FontWeight="Regular" Margin="10 0 0 0"/>
+        <TextBlock Text="quer casa que nao esteja ocupada por uma peça do adversário."  FontStyle="Italic" FontWeight="Regular" Margin="10 0 0 0"/>
+        <TextBlock/>
+        <TextBlock Text="Removendo pecas adversárias:"  FontWeight="Black" FontSize="16"/>
+        <TextBlock/>
+        <TextBlock Text="Removendo peças adversárias: Em qualquer uma das fases acima quando um jogador forma uma linha hori-"  FontStyle="Italic" FontWeight="Regular" Margin="10 0 0 0"/>
+        <TextBlock Text="zontal ou vertical com 3 peças ele fará um moinho, isso lhe concederá o direito de remover uma peça de seu"  FontStyle="Italic" FontWeight="Regular" Margin="10 0 0 0"/>
+        <TextBlock Text="adversário. Contudo você não poderá remover uma peça do seu adversário que faz parte de um moinho dele,"  FontStyle="Italic" FontWeight="Regular" Margin="10 0 0 0"/>
+        <TextBlock Text="a não ser que não exista outra peça para remover."  FontStyle="Italic" FontWeight="Regular" Margin="10 0 0 0"/>
+        <TextBlock/>
+        <TextBlock Text="O jogo termina quando  uma das 3 situações são alcançadas:"  FontWeight="Black" HorizontalAlignment="Center" FontSize="16"/>
+        <TextBlock/>
+        <TextBlock Text="1- Se um jogador reduzir as peças do adversário para 2"  FontStyle="Italic" FontWeight="Regular" Margin="10 0 0 0"/>
+        <TextBlock/>
+        <TextBlock Text="2- Se o jogador deixar seu adversário com nenhuma jogada válida, caso seu adversário tenha somente 3 pe-"  FontStyle="Italic" FontWeight="Regular" Margin="10 0 0 0"/>
+        <TextBlock Text="    ças em jogo, ele não poderá ser trancado"  FontStyle="Italic" FontWeight="Regular" Margin="10 0 0 0"/>
+        <TextBlock/>
+        <TextBlock Text="3- Se Ambos jogadores estiverem com três peças em jogo e, a partir desse momento, se em 10 jogadas não"  FontStyle="Italic" FontWeight="Regular" Margin="10 0 0 0"/>
+        <TextBlock Text="    houver ganhador, sera decretado empate na partida."  FontStyle="Italic" FontWeight="Regular" Margin="10 0 0 0"/>
+        <TextBlock/>
+        <Image Height="150" Width="150" Source="/Model/View/tabuleiro.png" RenderTransformOrigin="0.26,-1.421"/>
+        <Button x:Name="Voltar" Content="Voltar" Background="#FF393BAB" Foreground="#FFF5F1F1" Margin="50 50 50 0" Height="30"/>
+    </StackPanel>
+</Window>
