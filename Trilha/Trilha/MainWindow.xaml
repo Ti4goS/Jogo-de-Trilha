@@ -8,6 +8,7 @@
         Title="MainWindow" Height="450" Width="800"
         ResizeMode="NoResize"
         WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
         MouseDown="MoveWindow">
 
     <Window.Resources>
@@ -79,7 +80,8 @@
                VerticalAlignment="Top"
                HorizontalAlignment="Right"
                FontSize="10"
-               Content="Copyright © - Copia não comédia"/>
+               FontWeight="Bold"
+               Content="Copyright © - Copia não comédia" Cursor="Hand"/>
     </Grid>
 
 </Window>

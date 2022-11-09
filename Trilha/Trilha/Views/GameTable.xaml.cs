@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Media;
 using Trilha.Controllers;
 using Trilha.Model;
 
@@ -38,7 +39,7 @@ public partial class GameTable : Window
     private void SelectPecas1_Click(object sender, RoutedEventArgs e)
     {
         Proximojogador = jogoController.Jogar(JogadorAtual, 1);
-        Peca1.Background = jogoController.PintaBotao(JogadorAtual);
+        Peca1.Background = Brushes.Blue; //jogoController.PintaBotao(JogadorAtual);
     }
 
     private void Button_Click(object sender, RoutedEventArgs e)
