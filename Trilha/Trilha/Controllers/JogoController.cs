@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
 using Trilha.Model;
 using Trilha.Models;
 
@@ -71,8 +72,9 @@ public class JogoController
 
     public bool AindaPosiciona(CorJogador cor) =>
         cor.Equals(CorJogador.Azul) ? JogadorAzul.QuantidadePecas <= 8 : JogadorVermelho.QuantidadePecas <= 8;
-    
 
+
+    public SolidColorBrush PintaBotao(CorJogador cor) => cor.Equals(CorJogador.Azul) ? Brushes.Blue : Brushes.Red;
 
     /// <summary>
     /// Soma a quantidade de pecas do jogador

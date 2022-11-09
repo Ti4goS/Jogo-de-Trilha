@@ -45,7 +45,7 @@ public partial class MainWindow : Window
     /// <param name="e"></param>
     private void NovoJogo_Click(object sender, RoutedEventArgs e)
     {
-        var tabuleiroWindow = new GameTable();
+        var tabuleiroWindow = new GameTable(1,"",1,2,"",1);
         tabuleiroWindow.ShowDialog();
     }
 
