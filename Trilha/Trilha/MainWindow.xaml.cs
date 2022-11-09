@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Trilha.Model.View;
 
 namespace Trilha
 {
@@ -23,7 +24,8 @@ namespace Trilha
         public MainWindow()
         {
             InitializeComponent();
-            
+            var teste = new Manual();
+            teste.ShowDialog();
         }
     }
 }
