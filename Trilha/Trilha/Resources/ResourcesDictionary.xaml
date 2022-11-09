@@ -32,4 +32,20 @@
         </Style.Triggers>
     </Style>
 
+    <Style x:Key="TableTopButtons" TargetType="Button">
+        <Setter Property="Background" Value="Black"/>
+        <Setter Property="Height" Value="25"/>
+        <Setter Property="Width" Value="25"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border CornerRadius="20"
+                            Background="Black">
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
 </ResourceDictionary>

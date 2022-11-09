@@ -5,433 +5,265 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Trilha.Views"
         mc:Ignorable="d"
-        Title="Jogo" Height="450" Width="800"
-        ResizeMode="NoResize"
-        MouseDown="MoveWindow">
+        Title="TableTop" Height="475" Width="450"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+
+    <Window.Resources>
+        <ResourceDictionary Source="/Resources/ResourcesDictionary.xaml"></ResourceDictionary>
+    </Window.Resources>
+
     <Grid>
-        <Grid Background="White">
-            
-            <Button 
-                Name="Peca1"
-                Content="1" 
-                HorizontalAlignment="Left" 
-                Margin="15,10,0,0" 
-                VerticalAlignment="Top" 
-                Click="Button_Click" 
-                Width="30" Height="30" 
-                BorderBrush="Black" 
-                Background="Black"/>
-            
-            <Button 
-                Content="2;" 
-                HorizontalAlignment="Center" 
-                Margin="0,10,0,0" 
-                VerticalAlignment="Top" 
-                Click="Button_Click" 
-                Width="30" Height="30" 
-                BorderBrush="Black" 
-                Background="Black"/>
-            
-            <Button 
-                Content="3;" 
-                HorizontalAlignment="Left" 
-                Margin="750,10,0,0" 
-                VerticalAlignment="Top" 
-                Click="Button_Click" 
-                Width="30" Height="30" 
-                BorderBrush="Black" 
-                Background="Black"/>
-            
-            <Button 
-                Content="4;" 
-                HorizontalAlignment="Left" 
-                Margin="750,0,0,0" 
-                VerticalAlignment="Center" 
-                Click="Button_Click" 
-                Width="30" Height="30" 
-                BorderBrush="Black" 
-                Background="Black"/>
-            
-            <Button 
-                Content="5;" 
-                HorizontalAlignment="Left" 
-                Margin="750,394,0,0" 
-                VerticalAlignment="Top" 
-                Click="Button_Click" 
-                Width="30" Height="30" 
-                BorderBrush="Black" 
-                Background="Black"/>
-            
-            <Button 
-                Content="6;" 
-                HorizontalAlignment="Center" 
-                Margin="0,394,0,0" 
-                VerticalAlignment="Top" 
-                Click="Button_Click" 
-                Width="30" Height="30" 
-                BorderBrush="Black" 
-                Background="Black"/>
-            
-            <Button 
-                Content="7;" 
-                HorizontalAlignment="Left" 
-                Margin="15,394,0,0" 
-                VerticalAlignment="Top" 
-                Click="Button_Click"
-                Width="30" Height="30" 
-                BorderBrush="Black" 
-                Background="Black"/>
-            
-            <Button 
-                Content="8;" 
-                HorizontalAlignment="Left" 
-                Margin="15,0,0,0" 
-                VerticalAlignment="Center" 
-                Click="Button_Click" 
-                Width="30" Height="30" 
-                Background="Black"/>
-            
-            <Button 
-                Content="9;" 
-                HorizontalAlignment="Left" 
-                Margin="136,81,0,0" 
-                VerticalAlignment="Top" 
-                Click="Button_Click" 
-                Width="30" Height="30" 
-                BorderBrush="Black" 
-                Background="Black"/>
-            
-            <Button 
-                Content="10;" 
-                HorizontalAlignment="Center" 
-                Margin="0,81,0,0" 
-                VerticalAlignment="Top" 
-                Click="Button_Click" 
-                Width="30" Height="30" 
-                Background="Black"/>
-            
-            <Button 
-                Content="11;" 
-                HorizontalAlignment="Left" 
-                Margin="642,81,0,0" 
-                VerticalAlignment="Top" 
-                Click="Button_Click" 
-                Width="30" Height="30" 
-                BorderBrush="Black" 
-                Background="Black"/>
-            
-            <Button 
-                Content="12;" 
-                HorizontalAlignment="Left" 
-                Margin="642,0,0,0"
-                VerticalAlignment="Center" 
-                Click="Button_Click" 
-                Width="30" Height="30"
-                BorderBrush="Black" 
-                Background="Black"/>
-            
-            <Button 
-                Content="13;" 
-                HorizontalAlignment="Left" 
-                Margin="642,331,0,0" 
-                VerticalAlignment="Top" 
-                Click="Button_Click" 
-                Width="30" Height="30" 
-                BorderBrush="Black" 
-                Background="Black"/>
-            
-            <Button 
-                Content="14;" 
-                HorizontalAlignment="Center" 
-                Margin="0,331,0,0" 
-                VerticalAlignment="Top" 
-                Click="Button_Click" 
-                Width="30" Height="30" 
-                BorderBrush="Black" 
-                Background="Black"/>
-            
-            <Button 
-                Content="15;" 
-                HorizontalAlignment="Left" 
-                Margin="136,331,0,0" 
-                VerticalAlignment="Top" 
-                Click="Button_Click" 
-                Width="30" Height="30" 
-                BorderBrush="Black" 
-                Background="Black"/>
-            
-            <Button 
-                Content="16;" 
-                HorizontalAlignment="Left" 
-                Margin="136,0,0,0" 
-                VerticalAlignment="Center" 
-                Click="Button_Click" 
-                Width="30" Height="30" 
-                BorderBrush="Black" 
-                Background="Black"/>
-            
-            <Button 
-                Content="17;" 
-                HorizontalAlignment="Left" 
-                Margin="255,155,0,0" 
-                VerticalAlignment="Top" 
-                Click="Button_Click"
-                Width="30" Height="30" 
-                BorderBrush="Black" 
-                Background="Black"/>
-            
-            <Button 
-                Content="18;" 
-                HorizontalAlignment="Center" 
-                Margin="0,155,0,0" 
-                VerticalAlignment="Top" 
-                Click="Button_Click" 
-                Width="30" Height="30" 
-                BorderBrush="Black" 
-                Background="Black"/>
-            
-            <Button 
-                Content="19;" 
-                HorizontalAlignment="Left" 
-                Margin="527,155,0,0" 
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+
+        <Image Source="/Resources/Images/tabuleiro.jpg"
+               Grid.Row="0"
+               Grid.RowSpan="7"
+               Grid.Column="0"
+               Grid.ColumnSpan="7"/>
+
+        <Button Style="{DynamicResource TableTopButtons}"
+                Content="1"
+                Grid.Row="0"
+                Grid.Column="0"
+                Background="Black"
                 VerticalAlignment="Top"
-                Click="Button_Click" 
-                Width="30" Height="30" 
-                BorderBrush="Black" 
-                Background="Black"/>
-            
-            <Button 
-                Content="20;" 
-                HorizontalAlignment="Left" 
-                Margin="527,208,0,0" 
-                VerticalAlignment="Top" 
-                Click="Button_Click" 
-                Width="30" Height="30" 
-                BorderBrush="Black" 
-                Background="Black"/>
-            
-            <Button 
-                Content="21;" 
-                HorizontalAlignment="Left" 
-                Margin="527,262,0,0" 
-                VerticalAlignment="Top" 
-                Click="Button_Click" 
-                Width="30" Height="30" 
-                BorderBrush="Black" 
-                Background="Black"/>
-            
-            <Button 
-                Content="22;" 
-                HorizontalAlignment="Center" 
-                Margin="0,262,0,0" 
-                VerticalAlignment="Top" 
-                Click="Button_Click" 
-                Width="30" Height="30" 
-                BorderBrush="Black" 
-                Background="Black"/>
-            
-            <Button 
-                Content="23;" 
-                HorizontalAlignment="Left" 
-                Margin="255,262,0,0" 
-                VerticalAlignment="Top" 
-                Click="Button_Click" 
-                Width="30" Height="30" 
-                BorderBrush="Black" 
-                Background="Black"/>
-            
-            <Button 
-                Content="24;" 
-                HorizontalAlignment="Left" 
-                Margin="255,208,0,0" 
-                VerticalAlignment="Top" 
-                Click="Button_Click" 
-                Width="30" Height="30" 
-                Background="Black"/>
-            
-            <Image HorizontalAlignment="Left" Height="3" Margin="45,22,0,0" VerticalAlignment="Top" Width="340" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill"/>
-            <Image HorizontalAlignment="Left" Height="3" Margin="415,22,0,0" VerticalAlignment="Top" Width="335" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill"/>
-            <Image HorizontalAlignment="Left" Height="3" Margin="628,175,0,0" VerticalAlignment="Top" Width="275" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-                <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="90.144"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Image.RenderTransform>
-            </Image>
-            <Image HorizontalAlignment="Left" Height="3" Margin="647,357,0,0" VerticalAlignment="Top" Width="236" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-                <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="90.092"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Image.RenderTransform>
-            </Image>
-            <Image HorizontalAlignment="Left" Height="3" Margin="415,406,0,0" VerticalAlignment="Top" Width="335" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill"/>
-            <Image HorizontalAlignment="Left" Height="4" Margin="45,407,0,0" VerticalAlignment="Top" Width="340" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill"/>
-            <Image HorizontalAlignment="Left" Height="3" Margin="-55,123,0,0" VerticalAlignment="Top" Width="173" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-                <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="90.781"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Image.RenderTransform>
-            </Image>
-            <Image HorizontalAlignment="Left" Height="3" Margin="-50,315,0,0" VerticalAlignment="Top" Width="159" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-                <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="90.73"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Image.RenderTransform>
-            </Image>
-            <Image HorizontalAlignment="Left" Height="4" Margin="166,94,0,0" VerticalAlignment="Top" Width="219" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill"/>
-            <Image HorizontalAlignment="Left" Height="4" Margin="415,94,0,0" VerticalAlignment="Top" Width="227" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill"/>
-            <Image HorizontalAlignment="Left" Height="4" Margin="166,342,0,0" VerticalAlignment="Top" Width="219" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill"/>
-            <Image HorizontalAlignment="Left" Height="4" Margin="415,342,0,0" VerticalAlignment="Top" Width="227" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill"/>
-            <Image HorizontalAlignment="Left" Height="3" Margin="102,159,0,0" VerticalAlignment="Top" Width="100" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-                <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="90.781"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Image.RenderTransform>
-            </Image>
-            <Image HorizontalAlignment="Left" Height="3" Margin="105,285,0,0" VerticalAlignment="Top" Width="94" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-                <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="90.781"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Image.RenderTransform>
-            </Image>
-            <Image HorizontalAlignment="Left" Height="3" Margin="607,159,0,0" VerticalAlignment="Top" Width="100" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-                <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="90.781"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Image.RenderTransform>
-            </Image>
-            <Image HorizontalAlignment="Left" Height="3" Margin="610,285,0,0" VerticalAlignment="Top" Width="94" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-                <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="90.781"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Image.RenderTransform>
-            </Image>
-            <Image HorizontalAlignment="Left" Height="4" Margin="285,168,0,0" VerticalAlignment="Top" Width="100" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill"/>
-            <Image HorizontalAlignment="Left" Height="4" Margin="415,168,0,0" VerticalAlignment="Top" Width="112" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill"/>
-            <Image HorizontalAlignment="Left" Height="4" Margin="285,273,0,0" VerticalAlignment="Top" Width="100" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill"/>
-            <Image HorizontalAlignment="Left" Height="4" Margin="415,273,0,0" VerticalAlignment="Top" Width="112" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill"/>
-            <Image HorizontalAlignment="Left" Height="3" Margin="258,195,0,0" VerticalAlignment="Top" Width="25" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-                <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="90.781"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Image.RenderTransform>
-            </Image>
-            <Image HorizontalAlignment="Left" Height="3" Margin="258,248,0,0" VerticalAlignment="Top" Width="25" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-                <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="90.781"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Image.RenderTransform>
-            </Image>
-            <Image HorizontalAlignment="Left" Height="3" Margin="528,195,0,0" VerticalAlignment="Top" Width="25" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-                <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="90.781"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Image.RenderTransform>
-            </Image>
-            <Image HorizontalAlignment="Left" Height="3" Margin="528,248,0,0" VerticalAlignment="Top" Width="25" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-                <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="90.781"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Image.RenderTransform>
-            </Image>
-            <Image HorizontalAlignment="Left" Height="4" Margin="45,0,0,0" VerticalAlignment="Center" Width="91" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill"/>
-            <Image HorizontalAlignment="Left" Height="4" Margin="165,221,0,0" VerticalAlignment="Top" Width="90" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill"/>
-            <Image HorizontalAlignment="Left" Height="4" Margin="557,221,0,0" VerticalAlignment="Top" Width="85" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill"/>
-            <Image HorizontalAlignment="Left" Height="4" Margin="672,221,0,0" VerticalAlignment="Top" Width="78" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill"/>
-            <Image HorizontalAlignment="Center" Height="3" Margin="0,133,0,0" VerticalAlignment="Top" Width="46" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-                <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="90.781"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Image.RenderTransform>
-            </Image>
-            <Image HorizontalAlignment="Center" Height="3" Margin="0,59,0,0" VerticalAlignment="Top" Width="42" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-                <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="90.781"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Image.RenderTransform>
-            </Image>
-            <Image HorizontalAlignment="Center" Height="3" Margin="0,311,0,0" VerticalAlignment="Top" Width="42" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-                <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="90.781"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Image.RenderTransform>
-            </Image>
-            <Image HorizontalAlignment="Center" Height="3" Margin="0,377,0,0" VerticalAlignment="Top" Width="34" Source="../Resources/Images/Linha_preta.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
-                <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="90.781"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Image.RenderTransform>
-            </Image>
+                HorizontalAlignment="Left"
+                Margin="13,8,0,0"/>
+
+        <Button Style="{DynamicResource TableTopButtons}"
+                Content="2"
+                Grid.Row="0"
+                Grid.Column="3"
+                Background="Black"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Center"
+                Margin="3,8,0,0"/>
+
+        <Button Style="{DynamicResource TableTopButtons}"
+                Content="3"
+                Grid.Row="0"
+                Grid.Column="6"
+                Background="Black"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Right"
+                Margin="0,7,10,0"/>
+
+        <Button Style="{DynamicResource TableTopButtons}"
+                Content="4"
+                Grid.Row="1"
+                Grid.Column="1"
+                Background="Black"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Margin="14,7,0,0"/>
+
+        <Button Style="{DynamicResource TableTopButtons}"
+                Content="5"
+                Grid.Row="1"
+                Grid.Column="3"
+                Background="Black"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Margin="4,8,0,0"/>
 
 
-        </Grid>
+        <Button Style="{DynamicResource TableTopButtons}"
+                Content="6"
+                Grid.Row="1"
+                Grid.Column="5"
+                Background="Black"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Margin="0,7,9,0"/>
+
+        <Button Style="{DynamicResource TableTopButtons}"
+                Content="7"
+                Grid.Row="3"
+                Grid.Column="0"
+                Background="Black"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Margin="0,5,12,0"/>
+
+        <Button Style="{DynamicResource TableTopButtons}"
+                Content="8"
+                Grid.Row="3"
+                Grid.Column="1"
+                Background="Black"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Margin="14,5,0,0"/>
+
+        <Button Style="{DynamicResource TableTopButtons}"
+                Content="9"
+                Grid.Row="3"
+                Grid.Column="2"
+                Background="Black"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Right"
+                Margin="0,4,2,0"/>
+
+        <Button Style="{DynamicResource TableTopButtons}"
+                Content="10"
+                Grid.Row="3"
+                Grid.Column="4"
+                Background="Black"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Left"
+                Margin="4,0,0,0"/>
+
+        <Button Style="{DynamicResource TableTopButtons}"
+                Content="11"
+                Grid.Row="3"
+                Grid.Column="5"
+                Background="Black"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Margin="0,5,10,0"/>
+
+        <Button Style="{DynamicResource TableTopButtons}"
+                Content="12"
+                Grid.Row="3"
+                Grid.Column="6"
+                Background="Black"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Right"
+                Margin="0,5,10,0"/>
+
+        <Button Style="{DynamicResource TableTopButtons}"
+                Content="13"
+                Grid.Row="2"
+                Grid.Column="2"
+                Background="Black"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Right"
+                Margin="0,0,0,0"/>
+
+        <Button Style="{DynamicResource TableTopButtons}"
+                Content="14"
+                Grid.Row="2"
+                Grid.Column="3"
+                Background="Black"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Center"
+                Margin="4,0,0,0"/>
+
+        <Button Style="{DynamicResource TableTopButtons}"
+                Content="15"
+                Grid.Row="2"
+                Grid.Column="4"
+                Background="Black"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Left"
+                Margin="4,0,0,0"/>
+
+        <Button Style="{DynamicResource TableTopButtons}"
+                Content="16"
+                Grid.Row="4"
+                Grid.Column="2"
+                Background="Black"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Right"
+                Margin="0,2,0,0"/>
+
+        <Button Style="{DynamicResource TableTopButtons}"
+                Content="17"
+                Grid.Row="4"
+                Grid.Column="3"
+                Background="Black"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Center"
+                Margin="0,3,0,0"/>
+
+        <Button Style="{DynamicResource TableTopButtons}"
+                Content="18"
+                Grid.Row="4"
+                Grid.Column="4"
+                Background="Black"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Margin="4,2,0,0"/>
+
+        <Button Style="{DynamicResource TableTopButtons}"
+                Content="19"
+                Grid.Row="5"
+                Grid.Column="1"
+                Background="Black"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Margin="14,0,0,0"/>
+
+        <Button Style="{DynamicResource TableTopButtons}"
+                Content="20"
+                Grid.Row="5"
+                Grid.Column="3"
+                Background="Black"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"/>
+
+        <Button Style="{DynamicResource TableTopButtons}"
+                Content="21"
+                Grid.Row="5"
+                Grid.Column="5"
+                Background="Black"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Margin="0,0,9,0"/>
+
+        <Button Style="{DynamicResource TableTopButtons}"
+                Content="22"
+                Grid.Row="6"
+                Grid.Column="0"
+                Background="Black"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Left"
+                Margin="13,0,0,4"/>
+
+        <Button Style="{DynamicResource TableTopButtons}"
+                Content="23"
+                Grid.Row="6"
+                Grid.Column="3"
+                Background="Black"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Center"
+                Margin="0,0,0,4" Cursor="Hand"/>
+
+        <Button Style="{DynamicResource TableTopButtons}"
+                Content="24"
+                Grid.Row="6"
+                Grid.Column="6"
+                Background="Black"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Right"
+                Margin="0,0,10,4"/>
+
+        <Label Content="Copyright © - Copia não comédia"
+               Grid.Row="7"
+               Grid.Column="0"
+               Grid.ColumnSpan="7"
+               HorizontalAlignment="Center"
+               FontWeight="Bold"/>
+
     </Grid>
 </Window>
-
-
-
-
-
